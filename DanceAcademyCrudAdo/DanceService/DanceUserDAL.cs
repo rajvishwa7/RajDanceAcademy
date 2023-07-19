@@ -114,10 +114,5 @@ namespace DanceAcademyCrudAdo.DanceService
                 throw;
             }
         }
-
-        internal int UpdateDanceUser(int id)
-        {
-            throw new NotImplementedException();
-        }
     }
 }
