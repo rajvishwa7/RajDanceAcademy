@@ -63,7 +63,7 @@ namespace DanceAcademyCrudAdo.Controllers
 
         public ActionResult Delete(int id)
         {
-            int r = danceUserDAL.UpdateDanceUser(id);
+            int r = danceUserDAL.DeleteDanceUser(id);
             if (r > 0)
             {
                 TempData["DeleteMsg"] = "<script>alert('Student User Deleted Perfectly!')</script>";
@@ -75,7 +75,5 @@ namespace DanceAcademyCrudAdo.Controllers
             }
             return View();
         }
-
-
     }
 }
